@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rates</title>
+    <title>FAQs - Posh FI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,26 +48,11 @@
             margin: 20px auto;
         }
 
-        h2 {
-            font-size: 28px;
+        h1 {
+            font-size: 32px;
             color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #2c3e50;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
+            margin-bottom: 20px;
         }
 
         .faq-section {
@@ -84,15 +69,32 @@
         .faq-item h3 {
             font-size: 22px;
             color: #2c3e50;
-            margin-bottom: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
         }
 
         .faq-item p {
             font-size: 18px;
             margin: 0;
+            display: none;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .faq-item.active p {
+            display: block;
         }
     </style>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -108,81 +110,346 @@
     </nav>
 
     <div class="container">
-        <h1>FAQs</h1>
+        <h1>Frequently Asked Questions</h1>
         <div class="faq-section">
+            <!-- Section: Accounts and Services -->
+            <h2>Accounts and Services</h2>
             <div class="faq-item">
-                <h3>What types of accounts does Posh FI offer, and what are their features?</h3>
-                <p>Posh FI offers a range of accounts, including personal checking, savings, money market accounts, and certificates of deposit (CDs). Each account is designed with features like no monthly fees, competitive interest rates, and easy access through online and mobile banking.</p>
+                <h3 onclick="toggleFaq(this)">What types of accounts do you offer?</h3>
+                <p>Posh FI offers a variety of accounts, including checking, savings, money market, CDs, and retirement accounts (IRAs, 401k).</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are the fees associated with your accounts?</h3>
+                <p>Account fees at Posh FI are minimal, with many accounts offering no monthly maintenance fees. Specific fees can be found in our fee schedule.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Are there any monthly maintenance fees?</h3>
+                <p>Most Posh FI accounts do not have monthly maintenance fees, but some accounts may have fees depending on the balance or type.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is the minimum balance requirement?</h3>
+                <p>The minimum balance requirement varies by account type. Checking accounts generally have no minimum balance, while savings and money market accounts may have specific requirements.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer online banking services?</h3>
+                <p>Yes, Posh FI provides comprehensive online banking services, including account management, bill pay, and fund transfers.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you have mobile banking apps?</h3>
+                <p>Posh FI offers mobile banking apps for both Android and iOS, allowing you to manage your accounts on the go.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What documents are needed to open an account?</h3>
+                <p>To open an account, you'll need a government-issued ID, proof of address, and your Social Security number.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is the process to close an account?</h3>
+                <p>To close an account, visit any Posh FI branch or contact our customer service. You may need to settle any outstanding balances.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I view my recent transactions?</h3>
+                <p>You can view your recent transactions through our online banking platform or mobile app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I order checks?</h3>
+                <p>Checks can be ordered online through your Posh FI account or by contacting customer service.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I update my contact information?</h3>
+                <p>You can update your contact information through online banking, by visiting a branch, or by calling customer service.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I sign up for e-statements?</h3>
+                <p>Sign up for e-statements through our online banking portal by navigating to the statements section and opting in.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I reset my online banking password?</h3>
+                <p>You can reset your online banking password by clicking "Forgot Password" on the login page and following the instructions.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I check my account balance?</h3>
+                <p>Account balances can be checked through online banking, mobile apps, ATMs, or by contacting customer service.</p>
             </div>
 
+            <!-- Section: Loans and Credit -->
+            <h2>Loans and Credit</h2>
             <div class="faq-item">
-                <h3>What loan options are available at Posh FI, and how can I apply?</h3>
-                <p>Posh FI provides various loan products such as home mortgages, auto loans, and personal loans, all with competitive interest rates and flexible terms. Applications can be submitted online, in-branch, or over the phone.</p>
+                <h3 onclick="toggleFaq(this)">What are your current loan interest rates?</h3>
+                <p>Loan interest rates vary by product and market conditions. Contact us or visit our website for the most current rates.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I apply for a loan?</h3>
+                <p>Loan applications can be completed online, in person at any branch, or over the phone.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer mortgage loans?</h3>
+                <p>Yes, Posh FI offers competitive mortgage loans with flexible terms to suit your needs.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is the interest rate for personal loans?</h3>
+                <p>Personal loan interest rates depend on your creditworthiness and the loan term. Contact us for personalized rates.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are your auto loan rates?</h3>
+                <p>Auto loan rates at Posh FI are competitive and vary based on the loan term and your credit profile. Visit our website for current rates.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are your CD rates and terms?</h3>
+                <p>CD rates and terms vary based on the duration and amount invested. Current rates are available on our website.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are the terms for home equity loans?</h3>
+                <p>Posh FI offers home equity loans with competitive rates and flexible repayment terms. Specific terms depend on your equity and creditworthiness.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I apply for a home equity line of credit (HELOC)?</h3>
+                <p>You can apply for a HELOC online, by phone, or at any Posh FI branch. Our representatives will guide you through the process.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer small business loans?</h3>
+                <p>Yes, Posh FI offers a range of small business loans, including SBA loans, equipment financing, and business lines of credit.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is the process for obtaining a loan payoff statement?</h3>
+                <p>To obtain a loan payoff statement, contact our loan servicing department. You can also request it through online banking.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are your loan repayment terms?</h3>
+                <p>Loan repayment terms vary by product. Options include fixed and variable rates, with terms ranging from a few months to 30 years.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are your loan consolidation options?</h3>
+                <p>Posh FI offers loan consolidation options for eligible borrowers, including combining multiple debts into one manageable payment.</p>
             </div>
 
+            <!-- Section: Cards and Rewards -->
+            <h2>Cards and Rewards</h2>
             <div class="faq-item">
-                <h3>What are the current interest rates and account fees at Posh FI?</h3>
-                <p>Interest rates at Posh FI range from 0.01% APY on checking accounts to 1.75% APY on long-term CDs. Fees are minimal, with many accounts offering no monthly maintenance fees. Detailed information is available on our website or by contacting us directly.</p>
+                <h3 onclick="toggleFaq(this)">Do you offer credit card options?</h3>
+                <p>Yes, Posh FI offers a variety of credit cards with benefits like rewards, low APR, and no annual fees.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I report a lost or stolen card?</h3>
+                <p>To report a lost or stolen card, contact Posh FI customer service immediately. You can also do this through our mobile app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I increase my credit limit?</h3>
+                <p>Credit limit increases can be requested online or by contacting our customer service. Approval is based on your credit history and account standing.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is the process for applying for a credit card?</h3>
+                <p>Credit card applications can be completed online, by phone, or at any Posh FI branch. Approval is based on creditworthiness.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer rewards for debit card usage?</h3>
+                <p>Yes, Posh FI offers rewards for debit card usage, including cash back and points that can be redeemed for various rewards.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are your credit card reward options?</h3>
+                <p>Posh FI credit cards offer a range of rewards, including travel points, cash back, and retail discounts. Reward details are available on our website.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I redeem credit card points?</h3>
+                <p>Credit card points can be redeemed online through your Posh FI account portal or by contacting customer service.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I activate my new card?</h3>
+                <p>New cards can be activated by calling the activation number provided, through online banking, or via our mobile app.</p>
             </div>
 
+            <!-- Section: Business Services -->
+            <h2>Business Services</h2>
             <div class="faq-item">
-                <h3>What online and mobile banking services does Posh FI offer?</h3>
-                <p>Posh FI offers robust online and mobile banking services, including mobile check deposit, online bill pay, account management, and fund transfers, ensuring a seamless banking experience anytime, anywhere.</p>
+                <h3 onclick="toggleFaq(this)">Do you offer business accounts?</h3>
+                <p>Yes, Posh FI offers a range of business accounts, including checking, savings, and merchant services accounts tailored to small and large businesses.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you have financial planning services?</h3>
+                <p>Posh FI offers financial planning services for both individuals and businesses, including retirement planning, investment management, and estate planning.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer investment services?</h3>
+                <p>Yes, Posh FI provides a full suite of investment services, including brokerage accounts, mutual funds, and advisory services.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer insurance products?</h3>
+                <p>Posh FI offers a variety of insurance products, including life, health, and property insurance, tailored to meet your needs.</p>
             </div>
 
+            <!-- Section: Membership and Community -->
+            <h2>Membership and Community</h2>
             <div class="faq-item">
-                <h3>What are the criteria to join Posh FI?</h3>
-                <p>Posh FI serves clients primarily in the Greater Boston area. Eligibility is generally open to residents and businesses in the region, with specific criteria available upon inquiry.</p>
+                <h3 onclick="toggleFaq(this)">What is the criteria to join?</h3>
+                <p>Membership at Posh FI is open to residents and businesses in the Greater Boston area. Specific eligibility criteria can be discussed with our representatives.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you have a referral program?</h3>
+                <p>Yes, Posh FI offers a referral program where you can earn rewards for referring new members to join.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are the benefits of joining?</h3>
+                <p>Members of Posh FI enjoy competitive rates, minimal fees, excellent customer service, and access to a wide range of financial products and services.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer youth savings programs?</h3>
+                <p>Posh FI offers youth savings programs designed to help young members learn financial responsibility and build savings.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Are there any sign-up bonuses for new accounts?</h3>
+                <p>Posh FI occasionally offers sign-up bonuses for new accounts. Check our website or contact us for current promotions.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer any special programs for military members?</h3>
+                <p>Yes, Posh FI provides special financial programs and benefits for military members, including discounted loan rates and fee waivers.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you have a customer loyalty program?</h3>
+                <p>Posh FI offers a customer loyalty program that rewards members for continued business with discounts, special offers, and exclusive events.</p>
             </div>
 
+            <!-- Section: Security and Fraud Prevention -->
+            <h2>Security and Fraud Prevention</h2>
             <div class="faq-item">
-                <h3>Where are Posh FI branches located, and what are the hours of operation?</h3>
-                <p>Posh FI operates 20 branches across the Greater Boston area. Each location offers convenient hours tailored to meet the needs of our community. Visit our website for specific branch locations and operating hours.</p>
+                <h3 onclick="toggleFaq(this)">How do I report a lost or stolen card?</h3>
+                <p>To report a lost or stolen card, contact Posh FI customer service immediately. You can also do this through our mobile app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I report fraud or suspicious activity?</h3>
+                <p>If you suspect fraud or notice suspicious activity on your account, contact Posh FI's fraud department immediately for assistance.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I register for fraud alerts?</h3>
+                <p>You can register for fraud alerts through your online banking account or by contacting customer service.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I freeze my account?</h3>
+                <p>Account freezes can be requested through online banking, the mobile app, or by contacting customer service.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I set up a savings goal?</h3>
+                <p>Savings goals can be set up within your Posh FI account using the personal financial management tools available online or in the mobile app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I access my credit report?</h3>
+                <p>You can access your credit report through Posh FI’s online banking platform or by requesting it from a credit bureau.</p>
             </div>
 
+            <!-- Section: Transaction Services -->
+            <h2>Transaction Services</h2>
             <div class="faq-item">
-                <h3>How can I contact Posh FI’s customer service?</h3>
-                <p>Customer service at Posh FI can be reached via phone, email, live chat, or in-person at one of our branches. Our dedicated professionals are here to assist you during business hours.</p>
+                <h3 onclick="toggleFaq(this)">What are your ATM withdrawal limits?</h3>
+                <p>ATM withdrawal limits vary by account type, but generally, the daily limit is $500. Contact customer service to request an increase.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Can I transfer funds between accounts online?</h3>
+                <p>Yes, Posh FI allows for easy transfers between your accounts through online banking and the mobile app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Are there any fees for wire transfers?</h3>
+                <p>Wire transfer fees depend on the type of transfer. Domestic wires typically have a lower fee than international ones.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Are there any international transaction fees?</h3>
+                <p>International transaction fees may apply depending on the account and card used. Some Posh FI cards have no foreign transaction fees.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer wire transfer services?</h3>
+                <p>Yes, Posh FI offers both domestic and international wire transfer services, available online or at any branch.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I set up direct deposit?</h3>
+                <p>Direct deposit can be set up by providing your employer with Posh FI’s routing number and your account number.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I set up bill pay?</h3>
+                <p>Bill pay can be set up through Posh FI’s online banking platform by entering your biller information and scheduling payments.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I initiate a stop payment on a check?</h3>
+                <p>Stop payments can be initiated through online banking, by contacting customer service, or by visiting a branch.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I change my PIN?</h3>
+                <p>Your PIN can be changed at any Posh FI ATM, through online banking, or by contacting customer service.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is your policy on cashing checks?</h3>
+                <p>Posh FI allows check cashing for members, with immediate availability for checks drawn on Posh FI accounts. Holds may apply for others.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is your policy on bounced checks?</h3>
+                <p>Posh FI charges a fee for bounced checks due to insufficient funds. Overdraft protection can help avoid these fees.</p>
             </div>
 
+            <!-- Section: Miscellaneous -->
+            <h2>Miscellaneous</h2>
             <div class="faq-item">
-                <h3>What are the ATM withdrawal and transaction limits at Posh FI?</h3>
-                <p>ATM withdrawal and transaction limits vary by account type at Posh FI. Standard limits apply, but adjustments can be requested based on your needs. Please contact customer service for more details.</p>
+                <h3 onclick="toggleFaq(this)">What is your routing number?</h3>
+                <p>Posh FI’s routing number is 123456789.</p>
             </div>
-
             <div class="faq-item">
-                <h3>How can I manage my Posh FI account, including viewing transactions and updating information?</h3>
-                <p>You can manage your Posh FI account through our online banking platform or mobile app. This includes viewing recent transactions, updating personal information, and accessing account statements.</p>
+                <h3 onclick="toggleFaq(this)">What is your policy on foreign currency exchange?</h3>
+                <p>Posh FI offers foreign currency exchange services at select branches. Contact us for availability and rates.</p>
             </div>
-
             <div class="faq-item">
-                <h3>What credit and debit card options are available at Posh FI, and how can I manage them?</h3>
-                <p>Posh FI offers a variety of credit and debit cards with features like rewards programs, low APR, and no annual fees. Cards can be managed via our online and mobile banking systems.</p>
+                <h3 onclick="toggleFaq(this)">Do you offer notary services?</h3>
+                <p>Yes, Posh FI provides notary services free of charge to members at select branches.</p>
             </div>
-
             <div class="faq-item">
-                <h3>What is the process for opening or closing an account with Posh FI?</h3>
-                <p>Opening or closing an account with Posh FI is straightforward. You'll need to provide the necessary documentation, which can be completed online or in-branch. Our staff is here to guide you through the process.</p>
+                <h3 onclick="toggleFaq(this)">Do you offer prepaid debit cards?</h3>
+                <p>Posh FI offers prepaid debit cards that can be loaded with funds and used like a regular debit card.</p>
             </div>
-
             <div class="faq-item">
-                <h3>Does Posh FI offer financial planning and investment services?</h3>
-                <p>Yes, Posh FI provides a range of financial planning and investment services, including IRAs, brokerage accounts, mutual funds, and education savings accounts, all tailored to help you meet your financial goals.</p>
+                <h3 onclick="toggleFaq(this)">Do you offer savings bonds?</h3>
+                <p>Posh FI offers U.S. Savings Bonds through our partnership with the U.S. Treasury Department.</p>
             </div>
-
             <div class="faq-item">
-                <h3>How does Posh FI protect my account, and what should I do if I suspect fraud?</h3>
-                <p>Posh FI uses advanced security measures to protect your account. If you suspect any fraudulent activity, contact us immediately. We will take swift action to secure your account and address any concerns.</p>
+                <h3 onclick="toggleFaq(this)">How can I link my accounts?</h3>
+                <p>You can link your accounts through online banking or by contacting customer service for assistance.</p>
             </div>
-
             <div class="faq-item">
-                <h3>What special programs and rewards does Posh FI offer?</h3>
-                <p>Posh FI offers various special programs, including rewards for debit and credit card usage, youth savings programs, and sign-up bonuses for new accounts. We also have programs designed to benefit our business clients.</p>
+                <h3 onclick="toggleFaq(this)">What are your holiday hours?</h3>
+                <p>Posh FI observes federal holidays. Specific branch hours during holidays are posted on our website.</p>
             </div>
-
             <div class="faq-item">
-                <h3>What services does Posh FI offer for international transactions and travel?</h3>
-                <p>Posh FI provides international transaction services, including foreign currency exchange and travel notices to ensure your account security while abroad. Additionally, we offer cards with no foreign transaction fees.</p>
+                <h3 onclick="toggleFaq(this)">What are your holiday savings programs?</h3>
+                <p>Posh FI offers holiday savings programs to help members save throughout the year for holiday expenses, with competitive interest rates.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer mobile wallet services?</h3>
+                <p>Yes, Posh FI supports mobile wallet services such as Apple Pay, Google Pay, and Samsung Pay for secure, contactless payments.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is your process for providing tax documents?</h3>
+                <p>Posh FI provides tax documents electronically through online banking or by mail. Forms 1098 and 1099 are typically available by January 31st each year.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What are your travel notice requirements?</h3>
+                <p>Before traveling, notify Posh FI to ensure your cards remain active. This can be done online, by phone, or in-branch.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Do you offer mortgage refinancing?</h3>
+                <p>Yes, Posh FI offers mortgage refinancing options with competitive rates. Contact us to discuss your refinancing needs.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How can I apply for financial assistance?</h3>
+                <p>Financial assistance applications are available online or at any branch. We offer various programs to help members facing financial difficulties.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">What is the process for obtaining a loan payoff statement?</h3>
+                <p>To obtain a loan payoff statement, contact our loan servicing department. You can also request it through online banking.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I enroll in paperless statements?</h3>
+                <p>Enroll in paperless statements through online banking by navigating to the statements section and opting in.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">Can you explain your check hold policy?</h3>
+                <p>Posh FI's check hold policy varies by account type and check amount. Most checks clear within 2 business days.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">How do I access my account abroad?</h3>
+                <p>Your Posh FI account can be accessed abroad through online banking, our mobile app, or by using your debit/credit card at ATMs.</p>
             </div>
         </div>
     </div>
@@ -190,6 +457,11 @@
     <footer>
         <p>&copy; 2024 Posh FI. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleFaq(element) {
+            element.parentElement.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
-
